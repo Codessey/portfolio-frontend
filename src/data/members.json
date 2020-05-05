@@ -3,7 +3,8 @@
     {
       "name": "Name goes here",
       "img": "url to image goes here",
-      "tech_stack": ["All technologies you use go here"]
+      "tech_stack": ["All technologies you use go here"],
+      "role": "Your role goes here"
     }
   ]
 }
