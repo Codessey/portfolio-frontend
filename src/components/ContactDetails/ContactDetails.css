@@ -1,0 +1,37 @@
+.white-bg {
+  background-color: ghostwhite;
+  box-shadow: 0 2px 2px 2px #dcdcdc;
+}
+
+.flexed {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.wide {
+  width: 100vw;
+  padding: 12px;
+}
+
+.separator {
+  flex: 0.7 auto;
+}
+
+/* @media screen and (orientation: landscape) {
+  .flexed {
+    font-size: 14px;
+  }
+} */
+
+@media screen and (orientation: portrait) {
+  .flexed {
+    flex-flow: column wrap;
+  }
+}
