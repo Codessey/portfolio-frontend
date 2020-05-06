@@ -8,12 +8,18 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    rules: [{
+    rules: [
+      {
       test: /\.js$/,
       include: path.join(__dirname, "src"),
       exclude: /node_modules/,
       use: ["babel-loader"]
-    }]
+    },
+    {
+      test: /\.css$/,
+      use: ["style-loader", "css-loader"]
+    }
+  ]
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),

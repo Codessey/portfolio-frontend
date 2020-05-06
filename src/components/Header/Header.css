@@ -1,0 +1,80 @@
+.transparent-header {
+  background: transparent;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border: 1px solid white;
+}
+
+.transparent-header.blacken {
+  background: black;
+  border: none;
+}
+
+.blackened-header {
+  background-color: black;
+  border: none;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  top: 69px;
+  padding: 8px;
+}
+
+.spacer {
+  flex: 0.7 auto;
+}
+
+.hamburger {
+  border: none;
+  background: transparent;
+  padding: 8px;
+}
+
+.hamburger > div {
+  height: 2px;
+  width: 20px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 0.4em;
+  padding: 2px 2px;
+  color: blue;
+  font-size: 12px;
+}
+
+.links a:hover {
+  border-bottom: 2px solid skyblue;
+}
+
+@media screen and (orientation: landscape) {
+  .header {
+    top: 40px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .links {
+    display: none;
+  }
+}
