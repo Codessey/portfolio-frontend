@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ContactDetails } from "../ContactDetails/ContactDetails";
 import { Header } from "../Header/Header";
 import {About} from "../About/About";
+import { Clients } from "../Clients/Clients";
 import "./App.css";
 import json from "../../data/contact.json";
 
@@ -35,6 +36,7 @@ export class App extends Component {
         <Header shouldDarken={true} />
       </Router>
       <About />
+      <Clients />
     </div>
   );
 }
