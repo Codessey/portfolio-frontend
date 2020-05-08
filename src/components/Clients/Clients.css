@@ -1,0 +1,30 @@
+.client-wrapper {
+    background-image: url("");
+    /* margin-top: 10%; */
+    /* text-align: center; */
+
+}
+.client-section {
+    width: 70%;
+    padding: 10% 18%;
+    display: grid;
+    line-height: 1;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.client-icon {
+    color: #3D94F6;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+.clients-heading {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+    padding-left: 1.1rem;
+}
+.clients-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
